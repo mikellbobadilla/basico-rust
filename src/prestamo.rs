@@ -2,13 +2,13 @@
  * Propiedad y Perstamo
  *
  * Es fundamental para garantizar la seguridad de memoria y evitar problemas
- * como las fugas de memoria o las condiciones de carrera
+ * como las fugas de memoria o las condiciones de carrera.
  *
  * 1. Propiedad:
  * En Rust cada valor tiene una única propietaria en un momento dado.
  * Este es responsable de liberar la memoria asignada cuando ya no se necesita.
  * Cuando se transfiere la propiedad a otra variable, se dice que se ha realizado una "transferencia" de propiedad.
- * Esto se logra a través del operador de asignación (=) o mediante la llamada a funciones que aceptan el valor como parametro.
+ * Esto se logra a través del operador de asignación (=) o mediante la llamada a funciones que aceptan el valor como parámetro.
  * Aquí un ejemplo:
  */
 pub fn propiedad() {

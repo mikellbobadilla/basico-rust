@@ -1,9 +1,12 @@
 mod prestamo;
 mod punteros;
+mod hilos;
 
 use prestamo::propiedad;
 
 use punteros::{punteros, punteros_crudos};
+
+use crate::hilos::hilo;
 
 fn main() {
     println!("---------------- prestamos ----------------------");
@@ -15,4 +18,8 @@ fn main() {
     punteros();
     println!("---------------- punteros ----------------------");
 
+    println!("---------------- hilos ----------------------");
+    hilo();
+    println!("---------------- hilos ----------------------");
+    
 }
